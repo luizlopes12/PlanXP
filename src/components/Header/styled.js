@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
+const bgColor = '#1e1e1e'
 const textPrimary = "#ffffff";
 const textSecondary = "#939598";
 const menuNumberColor = "#292929";
 
-const MenuStyle = styled.header`
+const Styles = styled.header`
   width: 230px;
   min-height: 100vh;
   border-right: 2px solid #3e3e3e;
   color: ${textPrimary};
   .logo {
-    margin: 40px 0 0 40px;
+    margin: 40px 40px 0px;
   }
   button {
     display: none;
@@ -55,7 +56,8 @@ const MenuStyle = styled.header`
   }
   .bottomLink {
     position: relative;
-    margin: 100px 0 0 40px;
+    margin: 95px 0 0 40px;
+    padding-bottom: 30px;
     p {
       max-width: 150px;
     }
@@ -66,8 +68,8 @@ const MenuStyle = styled.header`
     }
     img {
       position: absolute;
-      right: 5px;
-      bottom: -25px;
+      right: 0;
+      bottom: 0;
     }
   }
 
@@ -77,7 +79,7 @@ const MenuStyle = styled.header`
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-
+    min-height: 80px;
     aside {
       width: 100%;
       height: 80px;
@@ -121,18 +123,21 @@ const MenuStyle = styled.header`
 
     nav {
       position: fixed;
+      background-color: ${bgColor};
+      z-index: 9999;
       top: 80px;
       width: 100%;
       height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      transition: all .2s linear;
+      transition: all .2s ease-in-out;
       transform: ${(props) =>
         props.toggled ? "translateX(100vh)" : "translateX(0)"};
 
 
         ul{
+          margin-top: 50px;
           width: max-content;
           li{
             width: max-content;
@@ -169,4 +174,4 @@ const MenuStyle = styled.header`
   }
 `;
 
-export default MenuStyle;
+export default Styles;

@@ -1,9 +1,10 @@
 import React from 'react'
-import Menu from '../../components/Header'
-
+import GamesContent from '../../components/GamesContent'
 const Games = () => {
   return (
-    <Menu/>
+    <>
+    <GamesContent/>
+    </>
   )
 }
 

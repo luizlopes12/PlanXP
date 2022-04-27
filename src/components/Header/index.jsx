@@ -1,18 +1,18 @@
 import React,{ useState } from 'react'
-import MenuStyle from './styled'
+import Styles from './styled'
 import logo from '../../img/logo.png'
 import arrowRight from '../../img/arrow.png'
 import { Link } from 'react-router-dom'
 
 
 
-const Menu = () => {
+const Header = () => {
     const [toggled, setToggled] = useState(true);
     const navOpen = () => {
     setToggled(!toggled);
     };
   return (
-    <MenuStyle toggled={toggled}>
+    <Styles toggled={toggled}>
         <aside>
         <img className='logo' src={logo} alt="Logo Plan XP" />
       <div className='navbutton' onClick={navOpen}>
@@ -31,7 +31,7 @@ const Menu = () => {
                     <span>02.</span>
                 </li>
                 <li>
-                    <Link to='/'>/plan news</Link>
+                    <Link to='/news'>/plan news</Link>
                     <span>03.</span>
                 </li>
                 <li>
@@ -54,8 +54,8 @@ const Menu = () => {
             </div>
         </nav>
         </aside>
-    </MenuStyle>
+    </Styles>
   )
 }
 
-export default Menu
+export default Header
