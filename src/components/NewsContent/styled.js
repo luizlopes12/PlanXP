@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-const bgColor = "#1e1e1e";
-const textPrimary = "#ffffff";
 const textSecondary = "#939598";
 const menuNumberColor = "#292929";
 

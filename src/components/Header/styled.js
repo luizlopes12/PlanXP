@@ -27,7 +27,7 @@ const Styles = styled.header`
       }
     }
   }
-  a {
+  .link {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;

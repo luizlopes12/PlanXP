@@ -79,6 +79,27 @@ const Styles = styled.section`
     }
   }
 
+
+  .link {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: ${textSecondary};
+    font-size: 16px;
+    &:after {
+      display: block;
+      content: "";
+      border-bottom: solid 1px #fff;
+      transform: scaleX(0);
+      transition: transform 200ms ease-in-out;
+    }
+    &:hover:after {
+      transform: scaleX(0.7);
+    }
+    &:after {
+      transform-origin: 0% 50%;
+    }
+  }
   @media (max-width: 900px) {
     flex-direction: column;
     margin: 20px 10px 100px;

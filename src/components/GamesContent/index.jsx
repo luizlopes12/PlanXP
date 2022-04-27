@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Styles from "./styled";
 import games1 from "../../img/games1.png";
 import games2 from "../../img/games2.png";
@@ -74,10 +75,15 @@ const GamesContent = () => {
               Experimente inovar com a<strong> PlanXP</strong> para
               <strong> desenvolver os seus jogos digitais!</strong>
             </p>
+
             <span>
+            <Link className="link" to='/contact'>
               Entre em contato agora mesmo 
               <img src={arrowRight} alt="Flecha icone" />
+              </Link>
+
             </span>
+
           </div>
         </div>
       </section>

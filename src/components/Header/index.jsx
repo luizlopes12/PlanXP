@@ -21,31 +21,31 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/" onClick={navOpen}>
+              <Link className='link' to="/" onClick={navOpen}>
                 /Quem somos
               </Link>
               <span>01.</span>
             </li>
             <li>
-              <Link to="/" onClick={navOpen}>
+              <Link className='link' to="/" onClick={navOpen}>
                 /o que fazemos
               </Link>
               <span>02.</span>
             </li>
             <li>
-              <Link to="/news" onClick={navOpen}>
+              <Link className='link' to="/news" onClick={navOpen}>
                 /plan news
               </Link>
               <span>03.</span>
             </li>
             <li>
-              <Link to="/" onClick={navOpen}>
+              <Link className='link' to="/" onClick={navOpen}>
                 /nossos clientes
               </Link>
               <span>04.</span>
             </li>
             <li>
-              <Link to="/contact" onClick={navOpen}>
+              <Link className='link' to="/contact" onClick={navOpen}>
                 /contato
               </Link>
               <span>05.</span>
@@ -54,7 +54,7 @@ const Header = () => {
 
           <div className="bottomLink">
             <p>
-              <Link to="/">Que tal inovar com a gente?</Link>
+              <Link className='link' to="/">Que tal inovar com a gente?</Link>
             </p>
             <span> ;) </span>
             <img src={arrowRight} alt="Seta" />
