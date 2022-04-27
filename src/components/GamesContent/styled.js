@@ -5,6 +5,9 @@ const textSecondary = "#939598";
 const Styles = styled.section`
     display: flex;
     margin: 210px 0 0 80px;
+    section{
+        width: 50%;
+    }
     .title{
     position: relative;
     p{
