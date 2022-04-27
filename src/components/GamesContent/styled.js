@@ -86,6 +86,9 @@ const Styles = styled.section`
     @media(max-width: 900px){
         flex-direction: column;
         margin: 20px 10px 100px;
+        section{
+            width: 100%;
+        }
     .title{
     span {
     top: -30px;

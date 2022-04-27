@@ -1,6 +1,7 @@
 import styled from "styled-components";
-const menuNumberColor = "#292929";
 const textSecondary = "#939598";
+const borderColor = "#464646";
+const menuNumberColor = "#292929";
 
 const Styles = styled.section`
   display: flex;
@@ -39,7 +40,7 @@ const Styles = styled.section`
     }
     input {
       background-color: transparent;
-      border: 1px solid #464646;
+      border: 1px solid ${borderColor};
       height: 35px;
       width: 100%;
       border-radius: 0 18px 0 0;
@@ -57,7 +58,7 @@ const Styles = styled.section`
     }
     textarea {
       background-color: transparent;
-      border: 1px solid #464646;
+      border: 1px solid ${borderColor};
       width: 100%;
       border-radius: 0 18px 0 0;
       resize: none;
@@ -65,23 +66,107 @@ const Styles = styled.section`
       padding: 5px;
       margin-bottom: 10px;
     }
-    button{
-        cursor: pointer;
-        margin-top: 20px;
-        background-color: transparent;
-        color: ${textSecondary};
-        border: none;
-        font-size: 22px;
-        padding: 5px 10px;
-        border-radius: 5px;
-        &:hover{
-            background-color: #464646;
-        }
-        img{
-            margin-left: 5px;
-        }
-
+    button {
+      cursor: pointer;
+      margin-top: 20px;
+      background-color: transparent;
+      color: ${textSecondary};
+      border: none;
+      font-size: 22px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      &:hover {
+        background-color: ${borderColor};
+      }
+      img {
+        margin-left: 5px;
+      }
     }
+  }
+
+
+
+
+
+  .cards{
+      width: 80%;
+      margin-left: 50px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+
+
+  .card{
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    .logo{
+        width: 100px;
+    }
+      p{
+          font-size: 25px;
+          color: ${textSecondary};
+          margin-bottom: 20px;
+      }
+      span{
+          font-size: 18px;
+      }
+      .socials{
+          margin-top: 20px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+      }
+      .maps{
+          margin-top: 20px;
+          p{
+              font-size: 15px;
+          text-transform: uppercase;
+
+              img{
+                  margin-left: 5px;
+              }
+          }
+
+      }
+  }
+
+
+
+
+
+  @media(max-width: 900px){
+    flex-direction: column;
+  margin: 20px 0;
+  section {
+    width: 90%;
+    margin: auto;
+  }
+
+    button {
+      width: 100%;
+      margin: 20px auto;
+  }
+  .cards{
+      width: 100%;
+      margin: 100px auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+
+
+  .card{
+      width: 90%;
+      margin: auto;
+      gap: 20px;
+
+  }
+
   }
 `;
 
