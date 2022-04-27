@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Styles from "./styled";
 import arrowRight from "../../img/whiteArrow.png";
 import facebook from "../../img/facebook.png";
@@ -44,7 +44,7 @@ const ContactContent = () => {
           </div>
           <div className="card">
             <p>
-              <img src={locate} />
+              <img src={locate} alt="Localização"/>
               /RS
             </p>
             <span>
@@ -55,13 +55,13 @@ const ContactContent = () => {
             <div className="maps">
               <p>
                 ver no google maps
-                <img src={arrowRight} />
+                <img src={arrowRight} alt="Flecha"/>
               </p>
             </div>
           </div>
           <div className="card">
             <p>
-              <img src={locate} />
+              <img src={locate} alt="Localização"/>
               /SP
             </p>
             <span>
@@ -72,7 +72,7 @@ const ContactContent = () => {
             <div className="maps">
               <p>
                 ver no google maps
-                <img src={arrowRight} />
+                <img src={arrowRight} alt="Flecha"/>
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ const ContactContent = () => {
             <div className="maps">
               <p>
                 conheça
-                <img src={arrowRight} />
+                <img src={arrowRight} alt="Flecha"/>
               </p>
             </div>
           </div>
@@ -102,7 +102,7 @@ const ContactContent = () => {
             <div className="maps">
               <p>
                 conheça
-                <img src={arrowRight} />
+                <img src={arrowRight} alt="Flecha"/>
               </p>
             </div>
           </div>
@@ -117,7 +117,7 @@ const ContactContent = () => {
             <div className="maps">
               <p>
                 conheça
-                <img src={arrowRight} />
+                <img src={arrowRight} alt="Flecha"/>
               </p>
             </div>
           </div>
