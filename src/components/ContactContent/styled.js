@@ -84,89 +84,76 @@ const Styles = styled.section`
     }
   }
 
-
-
-
-
-  .cards{
-      width: 80%;
-      margin-left: 50px;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
+  .cards {
+    width: 80%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 
-
-  .card{
-      width: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    .logo{
-        width: 100px;
-    }
-      p{
-          font-size: 25px;
-          color: ${textSecondary};
-          margin-bottom: 20px;
-      }
-      span{
-          font-size: 18px;
-      }
-      .socials{
-          margin-top: 20px;
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-      }
-      .maps{
-          margin-top: 20px;
-          p{
-              font-size: 15px;
-          text-transform: uppercase;
-
-              img{
-                  margin-left: 5px;
-              }
-          }
-
-      }
-  }
-
-
-
-
-
-  @media(max-width: 900px){
+  .card {
+    width: 200px;
+    display: flex;
     flex-direction: column;
-  margin: 20px 0;
-  section {
-    width: 90%;
-    margin: auto;
+    justify-content: space-between;
+    .logo {
+      width: 100px;
+    }
+    p {
+      font-size: 25px;
+      color: ${textSecondary};
+      margin-bottom: 20px;
+    }
+    span {
+      font-size: 18px;
+    }
+    .socials {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .maps {
+      margin-top: 20px;
+      p {
+        font-size: 15px;
+        text-transform: uppercase;
+
+        img {
+          margin-left: 5px;
+        }
+      }
+    }
   }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    margin: 20px 0;
+    section {
+      width: 90%;
+      margin: auto;
+    }
 
     button {
       width: 100%;
       margin: 20px auto;
-  }
-  .cards{
+    }
+    .cards {
       width: 100%;
       margin: 100px auto;
       display: flex;
       justify-content: space-between;
       gap: 20px;
       flex-wrap: wrap;
-  }
+    }
 
-
-  .card{
+    .card {
       width: 90%;
       margin: auto;
       gap: 20px;
-
-  }
-
+    }
   }
 `;
 

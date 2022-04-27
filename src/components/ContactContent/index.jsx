@@ -5,9 +5,9 @@ import facebook from "../../img/facebook.png";
 import instagram from "../../img/instagram.png";
 import youtube from "../../img/youtube.png";
 import locate from "../../img/locate.png";
-import marketing from '../../img/logo-marketing.png'
-import logo from '../../img/logo.png'
-import fullup from '../../img/fullup.png'
+import marketing from "../../img/logo-marketing.png";
+import logo from "../../img/logo.png";
+import fullup from "../../img/fullup.png";
 import Form from "../shared/Form";
 
 const ContactContent = () => {
@@ -26,7 +26,7 @@ const ContactContent = () => {
             infinitas possibilidades do mundo virtual.
           </p>
         </div>
-      <Form/>
+        <Form />
       </section>
       <section>
         <div className="cards">
@@ -78,38 +78,41 @@ const ContactContent = () => {
           </div>
           <div className="card">
             <p>
-              <img src={marketing} className='logo' alt="Logo marketing"/>
+              <img src={marketing} className="logo" alt="Logo marketing" />
             </p>
             <span>
-            A Plan faz parte do Grupo Plan Marketing, um grupo de comunicação completo.
+              A Plan faz parte do Grupo Plan Marketing, um grupo de comunicação
+              completo.
             </span>
             <div className="maps">
               <p>
-              conheça
+                conheça
                 <img src={arrowRight} />
               </p>
             </div>
           </div>
           <div className="card">
             <p>
-              <img src={logo} className='logo' alt="Logo Plan"/>
+              <img src={logo} className="logo" alt="Logo Plan" />
             </p>
             <span>
-            A Plan XP é especializada em realidade virtual, realidade aumentada e jogos.
+              A Plan XP é especializada em realidade virtual, realidade
+              aumentada e jogos.
             </span>
             <div className="maps">
               <p>
-              conheça
+                conheça
                 <img src={arrowRight} />
               </p>
             </div>
           </div>
           <div className="card">
             <p>
-              <img src={fullup} className='logo' alt="Logo fullup"/>
+              <img src={fullup} className="logo" alt="Logo fullup" />
             </p>
             <span>
-            A FullUp é uma agência especializada em branding, design e campanhas.
+              A FullUp é uma agência especializada em branding, design e
+              campanhas.
             </span>
             <div className="maps">
               <p>

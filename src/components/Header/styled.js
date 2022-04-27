@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const bgColor = '#1e1e1e'
+const bgColor = "#1e1e1e";
 const textPrimary = "#ffffff";
 const textSecondary = "#939598";
 const menuNumberColor = "#292929";
@@ -131,45 +131,44 @@ const Styles = styled.header`
       display: flex;
       flex-direction: column;
       align-items: center;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       transform: ${(props) =>
         props.toggled ? "translateX(100vh)" : "translateX(0)"};
 
-
-        ul{
-          margin-top: 50px;
+      ul {
+        margin-top: 50px;
+        width: max-content;
+        li {
           width: max-content;
-          li{
-            width: max-content;
-            margin: 50px 0;
-          }
+          margin: 50px 0;
         }
-        span {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    z-index: -999;
-    font-size: 60px;
-    font-weight: bold;
-    color: ${menuNumberColor};
-  }
-  .bottomLink {
-    position: relative;
-    margin: 40px 0 0 40px;
-    p {
-      max-width: 150px;
-    }
-    a {
-      text-transform: none;
-      color: ${textSecondary};
-      font-weight: normal;
-    }
-    img {
-      position: absolute;
-      right: 5px;
-      bottom: -15px;
-    }
-  }
+      }
+      span {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        z-index: -999;
+        font-size: 60px;
+        font-weight: bold;
+        color: ${menuNumberColor};
+      }
+      .bottomLink {
+        position: relative;
+        margin: 40px 0 0 40px;
+        p {
+          max-width: 150px;
+        }
+        a {
+          text-transform: none;
+          color: ${textSecondary};
+          font-weight: normal;
+        }
+        img {
+          position: absolute;
+          right: 5px;
+          bottom: -15px;
+        }
+      }
     }
   }
 `;

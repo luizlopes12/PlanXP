@@ -1,11 +1,9 @@
-import React from 'react'
-import GamesContent from '../../components/GamesContent'
+import React from "react";
+import GamesContent from "../../components/GamesContent";
 const Games = () => {
   return (
-    <>
-    <GamesContent/>
-    </>
-  )
-}
+      <GamesContent />
+  );
+};
 
-export default Games
+export default Games;

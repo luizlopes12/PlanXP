@@ -1,61 +1,68 @@
-import React,{ useState } from 'react'
-import Styles from './styled'
-import logo from '../../img/logo.png'
-import arrowRight from '../../img/arrow.png'
-import { Link } from 'react-router-dom'
-
-
+import React, { useState } from "react";
+import Styles from "./styled";
+import logo from "../../img/logo.png";
+import arrowRight from "../../img/arrow.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-    const [toggled, setToggled] = useState(true);
-    const navOpen = () => {
+  const [toggled, setToggled] = useState(true);
+  const navOpen = () => {
     setToggled(!toggled);
-    };
+  };
   return (
     <Styles toggled={toggled}>
-        <aside>
-        <img className='logo' src={logo} alt="Logo Plan XP" />
-      <div className='navbutton' onClick={navOpen}>
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
-      </div>
+      <aside>
+        <img className="logo" src={logo} alt="Logo Plan XP" />
+        <div className="navbutton" onClick={navOpen}>
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
         <nav>
-            <ul>
-                <li>
-                    <Link to='/' onClick={navOpen}>/Quem somos</Link>
-                    <span>01.</span>
-                </li>
-                <li>
-                    <Link to='/' onClick={navOpen}>/o que fazemos</Link>
-                    <span>02.</span>
-                </li>
-                <li>
-                    <Link to='/news' onClick={navOpen}>/plan news</Link>
-                    <span>03.</span>
-                </li>
-                <li>
-                    <Link to='/' onClick={navOpen}>/nossos clientes</Link>
-                    <span>04.</span>
-                </li>
-                <li>
-                    <Link to='/contact' onClick={navOpen}>/contato</Link>
-                    <span>05.</span>
-                </li>
-            </ul>
-            
-            <div className='bottomLink'>
-                <p>
-                <Link to='/'>Que tal inovar com a gente?</Link>
-                </p>
+          <ul>
+            <li>
+              <Link to="/" onClick={navOpen}>
+                /Quem somos
+              </Link>
+              <span>01.</span>
+            </li>
+            <li>
+              <Link to="/" onClick={navOpen}>
+                /o que fazemos
+              </Link>
+              <span>02.</span>
+            </li>
+            <li>
+              <Link to="/news" onClick={navOpen}>
+                /plan news
+              </Link>
+              <span>03.</span>
+            </li>
+            <li>
+              <Link to="/" onClick={navOpen}>
+                /nossos clientes
+              </Link>
+              <span>04.</span>
+            </li>
+            <li>
+              <Link to="/contact" onClick={navOpen}>
+                /contato
+              </Link>
+              <span>05.</span>
+            </li>
+          </ul>
+
+          <div className="bottomLink">
+            <p>
+              <Link to="/">Que tal inovar com a gente?</Link>
+            </p>
             <span> ;) </span>
             <img src={arrowRight} alt="Seta" />
-
-            </div>
+          </div>
         </nav>
-        </aside>
+      </aside>
     </Styles>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
