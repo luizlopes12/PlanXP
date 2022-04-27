@@ -1,7 +1,13 @@
+import GlobalStyle from './global/GlobalStyles'
+import RoutesManager from './RoutesManager';
 
 function App() {
   return (
-    <>Uepa</>
+    <>
+    <GlobalStyle/>
+    <RoutesManager/>
+    </>
+
 
     );
 }
