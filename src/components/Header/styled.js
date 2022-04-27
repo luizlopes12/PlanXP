@@ -56,7 +56,7 @@ const Styles = styled.header`
   }
   .bottomLink {
     position: relative;
-    margin: 95px 0 0 40px;
+    margin: 150px 0 0 40px;
     padding-bottom: 30px;
     p {
       max-width: 150px;

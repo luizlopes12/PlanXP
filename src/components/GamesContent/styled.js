@@ -137,7 +137,9 @@ const Styles = styled.section`
                 font-size: 16px;
                 text-transform: uppercase;
                 color: ${textSecondary};
-               
+               img{
+                   margin-left: 5px;
+               }
             }
         }
     }
