@@ -45,8 +45,10 @@ const Styles = styled.div`
     .text {
       font-size: 14px;
       line-height: 25px;
+      margin-bottom: 20px;
     }
-    .link {
+  }
+  .link {
       text-decoration: none;
       text-transform: uppercase;
       color: ${textSecondary};
@@ -63,11 +65,7 @@ const Styles = styled.div`
       &:after {
         transform-origin: 0% 50%;
       }
-      img {
-        margin-left: 10px;
-      }
     }
-  }
 
   @media (max-width: 900px) {
     margin-top: 5px;
