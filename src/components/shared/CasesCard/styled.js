@@ -47,12 +47,24 @@ const Styles = styled.div`
       line-height: 25px;
     }
     .link {
-      margin-top: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
       color: ${textSecondary};
-      display: flex;
-      align-items: flex-end;
+      &:after {
+        display: block;
+        content: "";
+        border-bottom: solid 1px #fff;
+        transform: scaleX(0);
+        transition: transform 200ms ease-in-out;
+      }
+      &:hover:after {
+        transform: scaleX(0.7);
+      }
+      &:after {
+        transform-origin: 0% 50%;
+      }
       img {
-        margin-left: 5px;
+        margin-left: 10px;
       }
     }
   }

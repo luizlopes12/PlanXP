@@ -51,7 +51,7 @@ const Styles = styled.section`
       width: 100%;
       display: flex;
       justify-content: space-between;
-      gap: 50px;
+      gap: 20px;
       .group-input {
         width: 48%;
       }
@@ -101,10 +101,27 @@ const Styles = styled.section`
     .logo {
       width: 100px;
     }
-    p {
-      font-size: 25px;
+    .link {
+      text-decoration: none;
+      text-transform: uppercase;
       color: ${textSecondary};
-      margin-bottom: 20px;
+      font-size: 14px;
+      &:after {
+        display: block;
+        content: "";
+        border-bottom: solid 1px #fff;
+        transform: scaleX(0);
+        transition: transform 200ms ease-in-out;
+      }
+      &:hover:after {
+        transform: scaleX(0.8);
+      }
+      &:after {
+        transform-origin: 0% 50%;
+      }
+      img {
+        margin-left: 10px;
+      }
     }
     span {
       font-size: 18px;
@@ -114,6 +131,9 @@ const Styles = styled.section`
       width: 100%;
       display: flex;
       justify-content: space-between;
+      img {
+        cursor: pointer;
+      }
     }
     .maps {
       margin-top: 20px;
@@ -135,7 +155,6 @@ const Styles = styled.section`
       width: 90%;
       margin: auto;
     }
-
     button {
       width: 100%;
       margin: 20px auto;

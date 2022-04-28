@@ -72,18 +72,15 @@ const Styles = styled.section`
       }
       span {
         font-size: 14px;
-
         text-transform: uppercase;
         color: ${textSecondary};
       }
     }
   }
 
-
   .link {
     text-decoration: none;
     text-transform: uppercase;
-
     color: ${textSecondary};
     font-size: 16px;
     &:after {
@@ -94,10 +91,13 @@ const Styles = styled.section`
       transition: transform 200ms ease-in-out;
     }
     &:hover:after {
-      transform: scaleX(0.7);
+      transform: scaleX(0.9);
     }
     &:after {
       transform-origin: 0% 50%;
+    }
+    img {
+      margin-left: 10px;
     }
   }
   @media (max-width: 900px) {

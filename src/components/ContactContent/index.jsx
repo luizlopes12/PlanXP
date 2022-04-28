@@ -9,6 +9,7 @@ import marketing from "../../img/logo-marketing.png";
 import logo from "../../img/logo.png";
 import fullup from "../../img/fullup.png";
 import Form from "../shared/Form";
+import { Link } from "react-router-dom";
 
 const ContactContent = () => {
   return (
@@ -44,7 +45,7 @@ const ContactContent = () => {
           </div>
           <div className="card">
             <p>
-              <img src={locate} alt="Localização"/>
+              <img src={locate} alt="Localização" />
               /RS
             </p>
             <span>
@@ -53,15 +54,15 @@ const ContactContent = () => {
               +55 51 98229.0400
             </span>
             <div className="maps">
-              <p>
+              <Link to="/" className="link">
                 ver no google maps
-                <img src={arrowRight} alt="Flecha"/>
-              </p>
+                <img src={arrowRight} alt="Flecha" />
+              </Link>
             </div>
           </div>
           <div className="card">
             <p>
-              <img src={locate} alt="Localização"/>
+              <img src={locate} alt="Localização" />
               /SP
             </p>
             <span>
@@ -70,10 +71,10 @@ const ContactContent = () => {
               +55 11 98871.8556
             </span>
             <div className="maps">
-              <p>
+              <Link to="/" className="link">
                 ver no google maps
-                <img src={arrowRight} alt="Flecha"/>
-              </p>
+                <img src={arrowRight} alt="Flecha" />
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -85,10 +86,10 @@ const ContactContent = () => {
               completo.
             </span>
             <div className="maps">
-              <p>
+              <Link to="/" className="link">
                 conheça
-                <img src={arrowRight} alt="Flecha"/>
-              </p>
+                <img src={arrowRight} alt="Flecha" />
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -100,10 +101,10 @@ const ContactContent = () => {
               aumentada e jogos.
             </span>
             <div className="maps">
-              <p>
+              <Link to="/" className="link">
                 conheça
-                <img src={arrowRight} alt="Flecha"/>
-              </p>
+                <img src={arrowRight} alt="Flecha" />
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -115,10 +116,10 @@ const ContactContent = () => {
               campanhas.
             </span>
             <div className="maps">
-              <p>
+              <Link to="/" className="link">
                 conheça
-                <img src={arrowRight} alt="Flecha"/>
-              </p>
+                <img src={arrowRight} alt="Flecha" />
+              </Link>
             </div>
           </div>
         </div>
