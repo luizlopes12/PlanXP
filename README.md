@@ -7,3 +7,7 @@
   
   
   `npm install`
+  
+  4 - Execute o projeto localmente com:
+  
+  `npm start`
